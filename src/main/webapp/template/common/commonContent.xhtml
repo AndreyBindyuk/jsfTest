@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets">
+    <div class="q">
+
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width: 450px; margin: 0 auto">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"/>
+            <li data-target="#carousel-example-generic" data-slide-to="1"/>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="resources/img/2.jpg"/>
+
+                <div class="carousel-caption">
+                    <h1>first</h1>
+                </div>
+            </div>
+            <div class="item">
+                <img src="resources/img/3.jpg"/>
+
+                <div class="carousel-caption">
+                    <h1>second</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </div>
+    <!--<div class="w">-->
+        <ul class="nav  navbar-default" style="width: 450px; margin: 0 auto">
+            <li class="dropdown mega-dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">DEMO <span class="caret"></span></a>
+                <div class="dropdown-menu mega-dropdown-menu">
+                    <!--<div class="container-fluid">-->
+                        <!-- Tab panes -->
+                        <div class="tab-content" style="margin-top: -350px">
+                            <div class="tab-pane active" id="men">
+                                <ul class="nav-list list-inline">
+                                    <li><a href="#"><img src="http://content.nike.com/content/dam/one-nike/globalAssets/menu_header_images/OneNike_Global_Nav_Icons_Running.png"/><span>DEMO1</span></a></li>
+                                    <li><a href="#"><img src="http://content.nike.com/content/dam/one-nike/globalAssets/menu_header_images/OneNike_Global_Nav_Icons_Basketball.png"/><span>DEMO2</span></a></li>
+
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="women">
+                                <ul class="nav-list list-inline">
+                                    <li><a href="#"><img src="http://content.nike.com/content/dam/one-nike/globalAssets/menu_header_images/OneNike_Global_Nav_Icons_Running.png"/><span>DEMO3</span></a></li>
+
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="kids">
+                                <ul class="nav-list list-inline">
+                                    <li><a href="#"><img src="http://content.nike.com/content/dam/one-nike/globalAssets/menu_header_images/OneNike_Global_Nav_Icons_Running.png"/><span>DEMO4</span></a></li>
+                                    <li><a href="#"><img src="http://content.nike.com/content/dam/one-nike/globalAssets/menu_header_images/OneNike_Global_Nav_Icons_Basketball.png"/><span>DEMO5</span></a></li>
+
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="sports">
+                                <ul class="nav-list list-inline">
+                                    <li><a href="#"><img src="http://content.nike.com/content/dam/one-nike/globalAssets/menu_header_images/OneNike_Global_Nav_Icons_Basketball.png"/><span>DEMO6</span></a></li>
+                                    <li><a href="#"><img src="http://content.nike.com/content/dam/one-nike/globalAssets/menu_header_images/OneNike_Global_Nav_Icons_Football.png"/><span>DEMO7</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    <!--</div>-->
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="active"><a href="#men" role="tab" data-toggle="tab">Section1</a></li>
+                        <li><a href="#women" role="tab" data-toggle="tab">Section2</a></li>
+                        <li><a href="#kids" role="tab" data-toggle="tab">Section3</a></li>
+                        <li><a href="#sports" role="tab" data-toggle="tab">Section4</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    <script>
+        $(document).ready(function(){
+            $(".dropdown").hover(
+                    function() {
+                        $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+                        $(this).toggleClass('open');
+                    },
+                    function() {
+                        $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+                        $(this).toggleClass('open');
+                    }
+            );
+        });
+    </script>
+
+
+
+    <!--</div>-->
+    <div class="e">
+
+    </div>
+
+
+
+
+</ui:composition>
+
+

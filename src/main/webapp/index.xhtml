@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="/template/common/commonLayout.xhtml" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+        <ui:define name="header">
+            <div class="navbar navbar-default navbar-fixed-top" style="height: 65px" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#" style="font-family: 'Monaco'; font-style: italic; font-size: xx-large; color: #b92c28"><i class="fa fa-xing" style="color: green; font-size: large"></i>Cars</a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#search">Search</a></li>
+                    </ul>
+                    <div id="search">
+                        <button type="button" class="close">×</button>
+                        <form>
+                            <input type="search" value="" placeholder="type keyword(s) here"/>
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </form>
+                    </div>
+
+
+                    <button type="button" class="navbar-right navbar-btn btn btn-success" data-toggle="modal" data-target="#myModal1" title="login">
+                        Sign in
+                    </button>
+
+
+                    <button type="button" class="navbar-right navbar-btn btn btn-warning" data-toggle="modal" data-target="#myModal" style="margin-right: 20px">
+                        Sign up
+                    </button>
+
+                </div>
+            </div>
+            <ui:include src="registration.xhtml"/>
+            <ui:include src="login.xhtml"/>
+        </ui:define>
+    <ui:define name="content">
+
+
+    </ui:define>
+</ui:composition>

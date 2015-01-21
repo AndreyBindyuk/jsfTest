@@ -10,9 +10,9 @@
     <h:head>
         <h:outputStylesheet name="common-style.css" library="css"/>
         <f:facet name="first">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-            <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+            <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
             <title>primestrap</title>
         </f:facet>
@@ -35,29 +35,40 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script type="text/javascript" src="../../resources/bootstrap/js/jquery.plugin.js"></script>
         <script type="text/javascript" src="../../resources/bootstrap/js/jquery.imagecube.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script type="text/javascript"  src="../../resources/bootstrap/js/jquery.boxroll-slider.min.js"></script>
+        <link rel="stylesheet" href="../../resources/css/boxroll-slider.css"/>
+        <h:link hreflang="../../resources/css/boxroll-slider.css"/>
+        <h:outputStylesheet library="css" name="boxroll-slider.css"/>
     </h:head>
-
     <h:body>
 
 
-            <div id="header">
-                <ui:include src="commonHeader.xhtml"/>
-                <ui:insert name="header"/>
-            </div>
+        <!--<div id="page">-->
+        <h:graphicImage style="min-height: 100%; min-width: 1024px; width: 100%; height: auto; position: fixed; top: 0; left: 0; background-size: cover; " name="nat.jpg" library="img"/>
 
-            <div id="content">
+        <div id="header">
 
-                <ui:include src="/template/common/commonContent.xhtml"/>
-                <ui:insert name="content">
+            <ui:include src="commonHeader.xhtml"/>
+            <ui:insert name="header"/>
+        </div>
 
-                </ui:insert>
-            </div>
+        <div id="content">
 
-            <div id="footer">
-                <ui:insert name="footer">
-                    <ui:include src="/template/common/commonFooter.xhtml"/>
-                </ui:insert>
-            </div>
+            <ui:include src="/template/common/commonContent.xhtml"/>
+            <ui:insert name="content">
+
+            </ui:insert>
+        </div>
+
+        <div id="footer">
+
+            <ui:insert name="footer">
+                <ui:include src="/template/common/commonFooter.xhtml"/>
+            </ui:insert>
+        </div>
+        <!--</h:graphicImage>-->
+        <!--</div>-->
 
 
     </h:body>

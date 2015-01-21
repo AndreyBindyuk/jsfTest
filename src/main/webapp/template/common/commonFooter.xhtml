@@ -3,14 +3,14 @@
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:p="http://primefaces.org/ui">
-            <div class="modal-footer" style="font-weight:900; margin: 0 auto">
+            <div class="modal-footer" style="font-weight:900; margin: 0 auto; position: relative">
                 <ul class="nav nav-pills">
                 <li role="presentation"><a href="#"><i class="fa fa-arrow-down" style="color: green"><i style="color: red">About</i></i></a></li>
                 <li role="presentation"><a href="#"><i class="fa fa-twitter" style="color: green"><i style="color: red">Twitter</i></i></a></li>
                 <li role="presentation"><a href="#"><i class="fa fa-facebook-square" style="color: green"><i style="color: red">Facebook</i></i></a></li>
                     <li role="presentation"><a href="#" style="color: green"><i style="color: red">Support</i></a></li>
                     <h:form styleClass="nav navbar-right">
-                            <i class="fa fa-language" style="color: green;font-size: x-large; margin-right: 10px"/>
+                            <i class="fa fa-language" style="color: red;font-size: x-large; margin-right: 10px"/>
                             <p:selectOneMenu  value="#{localizationBean.locale}" onchange="submit()"
                                              valueChangeListener="#{localizationBean.localeChanged}">
                                 <p:selectCheckboxMenu value="#{localizationBean.languages}" label=""/>
@@ -18,7 +18,7 @@
                     </h:form>
                 </ul>
 
-                <h5 style="color: green"><a href="http://cars.sportsblog.com/">Best Cars Around 2014-2015</a></h5>
+                <h5 style="color: red"><a href="http://cars.sportsblog.com/">Best Cars Around 2014-2015</a></h5>
             </div>
 
 </ui:composition>
